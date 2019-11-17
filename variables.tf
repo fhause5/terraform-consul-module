@@ -1,17 +1,10 @@
-variable "AWS_REGION" {}
-
-variable "PATH_TO_PRIVATE_KEY" {
-  default = "mykey"
-}
-
-variable "PATH_TO_PUBLIC_KEY" {
-  default = "mykey.pub"
-}
-
 variable "platform" {
   default     = "ubuntu"
   description = "The OS Platform"
 }
+variable "AWS_REGION" {
+}
+
 
 variable "user" {
   default = {
@@ -80,7 +73,7 @@ variable "instance_type" {
 }
 
 variable "tagName" {
-  default     = "advit"
+  default     = "adit"
   description = "Name tag for the servers"
 }
 
