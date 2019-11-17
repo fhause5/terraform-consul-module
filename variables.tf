@@ -75,7 +75,6 @@ variable "key_path" {
 }
 
 variable "region" {
-  default     = "us-east-1"
   description = "The region of AWS, for AMI lookups."
 }
 
@@ -85,7 +84,6 @@ variable "servers" {
 }
 
 variable "instance_type" {
-  default     = "t2.micro"
   description = "AWS Instance type, if you change, make sure it is compatible with AMI, not all AMIs allow all instance types "
 }
 
