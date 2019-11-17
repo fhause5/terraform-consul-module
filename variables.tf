@@ -2,9 +2,6 @@ variable "platform" {
   default     = "ubuntu"
   description = "The OS Platform"
 }
-variable "AWS_REGION" {
-}
-
 
 variable "user" {
   default = {
@@ -65,15 +62,16 @@ variable "region" {
 
 variable "servers" {
   default     = "1"
-  description = "The number of  servers to launch."
+  description = "The number of Consul servers to launch."
 }
 
 variable "instance_type" {
+  default     = "t2.micro"
   description = "AWS Instance type, if you change, make sure it is compatible with AMI, not all AMIs allow all instance types "
 }
 
 variable "tagName" {
-  default     = "adit"
+  default     = "advit"
   description = "Name tag for the servers"
 }
 
